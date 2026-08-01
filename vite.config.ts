@@ -22,6 +22,7 @@ const SOURCE_LOCATION_PLUGIN_PATH = SOURCE_LOCATION_PLUGIN_CANDIDATES.find((path
  * - outDir 'dist' / assetsDir 'assets' — 归一化产物目录
  */
 export default defineConfig({
+  base: "/academic-portfolio/",
   plugins: [
     tailwindcss(),
     TanStackRouterVite(),
