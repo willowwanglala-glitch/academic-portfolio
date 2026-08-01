@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local env
+.env
+.env.local
+
+# TypeScript
+.tsbuildinfo
+
+# Kimi temp files
+recover_sources.py
+recover_sources2.py
+read_cv.py
+crop_hero.py

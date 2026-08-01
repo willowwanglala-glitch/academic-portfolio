@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-sans: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Georgia", "Times New Roman", serif;
+}
+
+:root {
+  --background: oklch(0.96 0.05 90);
+  --foreground: oklch(0.28 0.04 140);
+  --card: oklch(0.98 0.02 90);
+  --card-foreground: oklch(0.28 0.04 140);
+  --popover: oklch(0.98 0.02 90);
+  --popover-foreground: oklch(0.28 0.04 140);
+  --primary: oklch(0.65 0.14 85);
+  --primary-foreground: oklch(0.98 0.01 85);
+  --secondary: oklch(0.92 0.04 90);
+  --secondary-foreground: oklch(0.28 0.04 140);
+  --muted: oklch(0.90 0.03 90);
+  --muted-foreground: oklch(0.45 0.04 140);
+  --accent: oklch(0.72 0.12 140);
+  --accent-foreground: oklch(0.98 0.01 90);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.88 0.04 90);
+  --input: oklch(0.88 0.04 90);
+  --ring: oklch(0.65 0.14 85);
+  --radius: 0.75rem;
+}
+
+/* 小狗爪印漂浮动画 */
+@keyframes paw-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+/* 飘落爪印动画 */
+@keyframes falling-paw {
+  0% { transform: translateY(-100vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+/* 小狗浮动动画 */
+@keyframes floating-dog {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.paw-decoration {
+  animation: paw-float 3s ease-in-out infinite;
+}
+
+.falling-paw {
+  animation: falling-paw linear infinite;
+}
+
+.floating-dog {
+  animation: floating-dog 2.5s ease-in-out infinite;
+}
