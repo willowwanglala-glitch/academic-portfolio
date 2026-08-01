@@ -1,9 +1,7 @@
-import { Mail, Phone, Github, MapPin } from "lucide-react";
+import { Mail, Phone, Github, MapPin, FileText } from "lucide-react";
 
 const PROFILE_IMAGE_URL = "/profile.jpg";
-
 const HEALING_BG_URL = "/hero-bg-web.jpg";
-  "https://conversation.cdn.meoo.host/conversations/341593501286400000/image/2026-07-31/1785511939519-image.png?auth_key=8550f3f0c52733b40feac9f2c57d68ffa853614e794b2cdad857659ac54fdda2";
 
 const fallingPaws = [
   { left: "8%", size: "w-5 h-5", delay: "0s", duration: "8s", opacity: "opacity-20" },
@@ -32,11 +30,13 @@ function PawPrint({ className, style }: { className?: string; style?: React.CSSP
 export default function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center px-6 py-20 overflow-hidden">
-      {/* Healing illustration background - no overlay */}
+      {/* Healing illustration background with subtle opacity */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${HEALING_BG_URL})` }}
+        style={{ backgroundImage: `url(${HEALING_BG_URL})`, opacity: 0.18 }}
       />
+      {/* Soft tint overlay for readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/30 to-background/60" />
 
       {/* Falling paw prints animation */}
       {fallingPaws.map((paw, i) => (
@@ -87,7 +87,22 @@ export default function HeroSection() {
             Exploring the intersection of computational linguistics and cross-cultural communication through AI-driven research.
           </p>
 
-          {/* Contact Info - left aligned with dark green text */}
+          {/* Download CV button */}
+          <div className="pt-1">
+            <a
+              href="/CV_Zhenfei_Wang.pdf"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-xl font-medium text-sm shadow-sm hover:shadow-md hover:scale-[1.02] transition-all duration-300"
+            >
+              <FileText size={16} />
+              Download CV
+            </a>
+            <p className="text-xs text-muted-foreground mt-2">
+              {/* Placeholder hint — replace with actual PDF filename */}
+              Please upload your CV PDF to <code className="bg-muted px-1 rounded">public/CV_Zhenfei_Wang.pdf</code>
+            </p>
+          </div>
+
+          {/* Contact Info */}
           <div className="flex flex-wrap justify-start gap-4 pt-2">
             <ContactItem icon={<Phone size={16} />} text="+86 13794684194" colorClass="text-foreground" />
             <ContactItem icon={<Mail size={16} />} text="3223005898@mail2.gudt.edu.cn" colorClass="text-foreground" />
