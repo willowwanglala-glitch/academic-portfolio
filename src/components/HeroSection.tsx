@@ -33,7 +33,7 @@ export default function HeroSection() {
       {/* Healing illustration background with subtle opacity */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${HEALING_BG_URL})`, opacity: 0.18 }}
+        style={{ backgroundImage: `url(${HEALING_BG_URL})`, opacity: 0.30 }}
       />
       {/* Soft tint overlay for readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/30 to-background/60" />
