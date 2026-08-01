@@ -1,7 +1,9 @@
 import { Mail, Phone, Github, MapPin, FileText } from "lucide-react";
 
-const PROFILE_IMAGE_URL = "/profile.jpg";
-const HEALING_BG_URL = "/hero-bg-web.jpg";
+const BASE = import.meta.env.BASE_URL;
+
+const PROFILE_IMAGE_URL = `${BASE}profile.jpg`;
+const HEALING_BG_URL = `${BASE}hero-bg-web.jpg`;
 
 const fallingPaws = [
   { left: "8%", size: "w-5 h-5", delay: "0s", duration: "8s", opacity: "opacity-20" },
@@ -90,7 +92,7 @@ export default function HeroSection() {
           {/* Download CV button */}
           <div className="pt-1">
             <a
-              href="/CV-Zhenfei%20Wang.pdf"
+              href={`${BASE}CV-Zhenfei%20Wang.pdf`}
               download="CV-Zhenfei Wang.pdf"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-xl font-medium text-sm shadow-sm hover:shadow-md hover:scale-[1.02] transition-all duration-300"
             >
