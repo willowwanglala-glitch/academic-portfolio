@@ -75,7 +75,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Content without card background - pure text with shadow for readability on illustration */}
+        {/* Content */}
         <div className="reveal reveal-right space-y-6 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground leading-tight drop-shadow-lg" style={{ textShadow: "0 2px 8px rgba(255,255,255,0.6)" }}>
             Zhenfei Wang
@@ -87,32 +87,16 @@ export default function HeroSection() {
             Exploring the intersection of computational linguistics and cross-cultural communication through AI-driven research.
           </p>
 
-          {/* Download CV button — currently disabled until PDF is uploaded */}
-          <div className="pt-1">
-            <button
-              disabled
-              className="inline-flex items-center gap-2 bg-primary/40 text-primary-foreground/60 px-5 py-2.5 rounded-xl font-medium text-sm cursor-not-allowed"
-              title="CV PDF coming soon"
-            >
-              <FileText size={16} />
-              Download CV
-            </button>
-            <p className="text-xs text-muted-foreground mt-2">
-              CV will be available shortly
-            </p>
-          </div>
+          {/* Download CV button */}
           <div className="pt-1">
             <a
-              href="/CV_Zhenfei_Wang.pdf"
+              href="/CV-Zhenfei%20Wang.pdf"
+              download="CV-Zhenfei Wang.pdf"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-xl font-medium text-sm shadow-sm hover:shadow-md hover:scale-[1.02] transition-all duration-300"
             >
               <FileText size={16} />
               Download CV
             </a>
-            <p className="text-xs text-muted-foreground mt-2">
-              {/* Placeholder hint — replace with actual PDF filename */}
-              Please upload your CV PDF to <code className="bg-muted px-1 rounded">public/CV_Zhenfei_Wang.pdf</code>
-            </p>
           </div>
 
           {/* Contact Info */}
