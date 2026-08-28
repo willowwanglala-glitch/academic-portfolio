@@ -10,12 +10,12 @@ const manuscripts: Manuscript[] = [
   {
     title: "Prompt Optimization for Chinese Classical Poetry Translation Based on Large Language Models",
     authors: "Zhenfei Wang",
-    details: "Manuscript of approximately 13,000 words. Found the main effect of prompt framework on translation quality (p < .001) through 486 prompt-translation pairs across DeepSeek-V3.1, Kimi-K2, and ChatGPT.",
+    details: "Manuscript of approximately 13,000 words, currently undergoing refinement before submission. Found the main effect of prompt framework on translation quality (p < .001) through 486 prompt-translation pairs across DeepSeek-V3.1, Kimi-K2, and ChatGPT, with expert scoring (Cronbach's α = .789) on a three-dimension evaluation scale.",
   },
   {
     title: "Research Hotspots and Visualized Analysis of Prosodic Grammar Based on VOSviewer and CiteSpace",
     authors: "Zhenfei Wang",
-    details: "Manuscript of over 10,000 words. Independent bibliometric analysis of 5,000+ citation records using CiteSpace and VOSviewer, focusing on the scholarly contributions of Feng Shengli.",
+    details: "Manuscript of over 10,000 words, currently under revision with supervisor guidance and planned for SSCI submission. Independent bibliometric analysis of 5,000+ citation records using CiteSpace and VOSviewer, focusing on the scholarly contributions of Feng Shengli.",
   },
 ];
 

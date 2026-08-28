@@ -20,6 +20,9 @@ const awards = [
   { name: 'Outstanding Team Leader, "Winter Break Alumni Outreach Program" for Admissions Promotion', year: '2025' },
   { name: 'Gold Award (University), FLTRP · iTest Cup Short Video Competition', year: '2024' },
   { name: 'Merit Award (School), National College Students New Liberal Arts Practice and Innovation Competition', year: '2024' },
+  { name: 'Outstanding Orientation Ambassador, Guangdong University of Technology', year: '2023–2024' },
+  { name: 'Advanced Individual in Communist Youth League Work, Guangdong University of Technology', year: '2023–2024' },
+  { name: 'Outstanding Communist Youth League Member, Guangdong University of Technology', year: '2023' },
 ];
 
 const certifications = [
@@ -39,6 +42,7 @@ const additionalInfo = [
   { category: 'Entrepreneurship', details: 'Co-founded "Waimai Go" studio at GDUT Innovation Hub (2024)' },
   { category: 'Public Service', details: 'Administrative assistant, Country Education Bureau (2025)' },
   { category: 'Design', details: '"GDUT Youth Hub" member' },
+  { category: 'Professional Training', details: "Completed YGYM Group's intensive program on quantitative research methods (SPSS/JASP) and translation industry practices (Mar 2026)" },
 ];
 
 export default function AwardsSection() {

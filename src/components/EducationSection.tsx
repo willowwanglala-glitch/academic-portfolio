@@ -7,8 +7,8 @@ const educationData = {
   program: 'First Cohort, "English + AI" Innovation Program',
   minor: "Computer Science",
   period: "09/2023 – 07/2027 (Expected)",
-  gpaMajor: "87.4/100",
-  gpaOverall: "86.6/100",
+  gpaMajor: "87.5/100",
+  gpaOverall: "86.7/100",
   coreModules: [
     { name: "Natural Language Processing", score: 90 },
     { name: "Machine Learning", score: 90 },
@@ -102,7 +102,7 @@ export default function EducationSection() {
               <div className="flex items-center gap-2 bg-primary/15 px-4 py-2 rounded-lg border border-primary/20">
                 <Award className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium text-primary-foreground">
-                  Major GPA: {educationData.gpaMajor}
+                  English Major GPA: {educationData.gpaMajor}
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-primary/15 px-4 py-2 rounded-lg border border-primary/20">

@@ -16,9 +16,9 @@ const researchExperiences = [
     organization: "Speech and Language Laboratory, Nanyang Technological University, Singapore (Remote)",
     period: "07/2026 – Present",
     description: [
-      "Conducting research on synthesis and automatic evaluation of non-verbal vocalizations (e.g., laughter, sighs) for TTS systems, supervised by Prof. Chng Eng Siong.",
-      "Building an LLM-driven data pipeline: generating text data with LLMs, synthesizing speech containing diverse non-verbal cues with speech LLMs, and verifying outputs through an LLM-as-a-judge protocol.",
-      "Curating a high-quality synthetic speech dataset via dual-agreement filtering—retaining only audio samples independently validated by two LLM judges."
+      "Researched synthesis and automatic evaluation of non-verbal vocalizations (e.g., laughter, sighs) for TTS systems, under the supervision of Prof. Chng Eng Siong.",
+      "Implemented and operated a lab-specified batch pipeline for tagged TTS evaluation: GPT scenario/corpus generation → zh/en tag insertion → Qwen (~200 h) and ElevenLabs (~6 h) synthesis → Omni judge → VAD rescue (p1 only) → round-based archiving and duration/pass-rate tracking.",
+      "Scaled execution to 633 rounds and 37.7k countable clips, meeting synthesis targets and delivering ~197 h of QC-usable speech per lab filtering rules (94.9% clip-level pass rate after VAD; p2: ~99%); prepared the unified handoff package (audio, JSON, README, pass-rate summary)."
     ]
   },
   {
@@ -26,8 +26,8 @@ const researchExperiences = [
     organization: "Research Project",
     period: "12/2025 – Present",
     description: [
-      "Investigated how Retrieval-Augmented Generation (RAG) can be integrated with the continuation–output hypothesis to enhance AI-assisted writing instruction.",
-      "Independently designed the research framework (Coze), integrating SLA theory with RAG architecture; developed hypotheses, experimental design, corpus preparation plan, prompt tasks, and evaluation metrics.",
+      "Investigated how Retrieval-Augmented Generation (RAG) can be integrated with the continuation–output hypothesis to enhance AI-assisted writing instruction and address the lack of mechanism-level validation in AI-supported language learning.",
+      "Independently designed the research framework (Coze), integrating SLA theory with RAG architecture; developed hypotheses, experimental design, corpus preparation plan, prompt tasks, and evaluation metrics for writing outcomes.",
       "Established the research framework and technical pathway, with ongoing data preparation and experimental implementation for theory-driven evaluation of RAG-based writing support."
     ]
   },
@@ -37,8 +37,8 @@ const researchExperiences = [
     period: "11/2025 – Present",
     description: [
       "Examined how prompt engineering can improve LLM-based translation of Chinese classical poetry, addressing the lack of theory-driven prompt design for linguistically and culturally complex texts.",
-      "Based on Xu Yuanchong's translation theories, collected 7 poems, designed 9 structured prompt architectures across multiple LLMs (DeepSeek-V3.1, Kimi-K2, ChatGPT) — 486 prompt-translation pairs.",
-      "Found the main effect of prompt framework on translation quality (p < .001); completed core experimental framework and drafted a manuscript of approximately 13,000 words."
+      "Based on Xu Yuanchong's translation theories, collected 7 poems, designed 9 structured prompt architectures and translated them across multiple LLMs (DeepSeek-V3.1, Kimi-K2, ChatGPT) — 486 prompt-translation pairs. Led research design, corpus preparation, experimental workflow (Coze) construction, and data analysis, with translation outputs assessed through expert scoring and SPSS (Cronbach's α = .789) on a self-made three-dimension evaluation scale.",
+      "Found the main effect of prompt framework on translation quality (p < .001); completed the core experimental framework and drafted a manuscript of approximately 13,000 words, currently undergoing refinement before submission."
     ]
   },
   {
@@ -48,7 +48,7 @@ const researchExperiences = [
     isTeamLeader: true,
     description: [
       "Investigated the intellectual structure, research hotspots, and emerging trends in prosodic grammar, focusing on the scholarly contributions of Feng Shengli.",
-      "Independently conducted research design, literature collection, data cleaning, and bibliometric analysis using CiteSpace and VOSviewer, analyzing over 5,000 citation records.",
+      "Independently conducted research design, literature collection, data cleaning, and bibliometric analysis using CiteSpace and VOSviewer, analyzing over 5,000 citation records and managing large-scale literature datasets with tools such as Google Scholar, CNKI, Zotero, and NoteExpress.",
       "Completed a manuscript of over 10,000 words; currently under revision with supervisor guidance and planned for submission to SSCI."
     ]
   },
@@ -57,7 +57,7 @@ const researchExperiences = [
     organization: "Undergraduate Innovation Project",
     period: "11/2024 – 12/2025",
     description: [
-      "Examined subtitle translation strategies in the Chinese animated film Ne Zha from the perspective of Skopos Theory, focusing on how culturally specific elements are conveyed to international audiences.",
+      "Examined subtitle translation strategies in the Chinese animated film Ne Zha: Birth of the Demon Child from the perspective of Skopos Theory, focusing on how culturally specific elements are conveyed to international audiences.",
       "Collaborated with four team members under supervision to analyze subtitle translation cases. Contributed to literature review, data collection, theoretical analysis, and the writing of the final research paper.",
       "Successfully completed the project and produced a final research paper, strengthening skills in theoretical analysis, academic writing, and collaborative research."
     ]
@@ -69,7 +69,7 @@ const researchExperiences = [
     isTeamLeader: true,
     description: [
       "Investigated the phenomenon of cultural discount in the international dissemination of Chinese films, examining how cultural specificity affects cross-cultural audience reception.",
-      "Served as team leader, coordinating two members under supervision to conduct a literature review on cultural discount and cross-cultural film communication.",
+      "Served as team leader, coordinating two members under supervision to conduct a literature review on cultural discount and cross-cultural film communication, including database searches and analysis using CNKI and Web of Science.",
       "Completed a final literature review report, strengthening skills in academic writing, literature synthesis, and collaborative research."
     ]
   }

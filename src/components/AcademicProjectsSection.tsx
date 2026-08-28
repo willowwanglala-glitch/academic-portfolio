@@ -28,9 +28,9 @@ const projects: AcademicProject[] = [
     subtitle: 'Course Project (Machine Learning) — Undergraduate Course Paper',
     period: 'Undergraduate Course Paper',
     description: [
-      'Constructed a self-built Chinese–English parallel corpus of approximately 320,000 words covering Chinese political documents such as government work reports and white papers.',
-      'After text cleaning, tokenization, and vocabulary construction, a three-layer LSTM neural network was implemented using PyTorch. The model was trained and evaluated with an 80/20 train–test split.',
-      'The training process was stable, with the loss value decreasing steadily and converging at 8.3047. The results demonstrate the feasibility of LSTM-based architectures for machine translation of political discourse and provide empirical reference for translation modeling in low-resource or domain-specific settings.',
+      'Constructed a 320,000-word Chinese–English parallel corpus from political documents (government reports, white papers); performed text cleaning, tokenization, and vocabulary construction.',
+      'Implemented a three-layer LSTM NMT model in PyTorch; trained and evaluated with an 80/20 train–test split, demonstrating feasibility for domain-adapted translation in low-resource settings.',
+      'Strengthened skills in bilingual corpus construction, neural machine translation modeling, and PyTorch-based implementation, and deepened understanding of sequence modeling and domain-adapted machine translation.',
     ],
   },
   {
@@ -38,9 +38,10 @@ const projects: AcademicProject[] = [
     subtitle: 'Course Project (Corpus Linguistics) — Undergraduate Course Paper',
     period: 'Undergraduate Course Paper',
     description: [
+      'Analysis of gender-related discourse differences in the Top 30 global box office films (2025).',
       'Constructed a target corpus of subtitles from 14 popular films, comprising 138,137 words. Used the LOB and Brown corpora as reference corpora.',
       'Using tools such as AntConc, WordSmith, and SPSS, conducted keyword analysis (e.g., he/she, man/woman), log-likelihood (LL) value calculation, and part-of-speech tagging to examine gendered discourse patterns.',
-      'Exhibited clear gendered discourse differences in the film subtitle corpus, with male-associated language more frequently linked to power and action, and female-associated language more often related to appearance and family. Statistically significant differences were observed between the film corpus and the reference corpora.',
+      'Exhibited clear gendered discourse differences in the film subtitle corpus, with male-associated language more frequently linked to power and action, and female-associated language more often related to appearance and family. Statistically significant differences were observed between the film corpus and the reference corpora. The constructed corpus also demonstrates potential value for English learning and machine translation training.',
     ],
   },
   {
@@ -48,9 +49,10 @@ const projects: AcademicProject[] = [
     subtitle: 'Course Project (Software Engineering) — Team Leader & Backend/AI Lead',
     period: 'Undergraduate Course Paper',
     description: [
-      'Led 2-member team through 4-Sprint agile development, coordinating cross-functional integration and deliverable scheduling.',
-      'Architected unified backend API gateway (20 cloud functions) with MongoDB schema design and dual-mode cloud/local deployment.',
-      'Orchestrated Coze AI workflows for intelligent tutoring, study plan generation, and essay evaluation with fault-tolerant degradation pipelines.',
+      'Team Lead & Backend/AI Lead for a 2-person agile team; owned backend architecture and end-to-end delivery.',
+      'Built a WeChat Cloud unified API gateway (~28 actions) + Coze AI proxy, with dual-mode cloud/local fallback.',
+      'Implemented AI tutoring, study-plan generation, and essay evaluation with fault-tolerant degradation; closed the loop from Q&A → weak points → study tasks.',
+      'Wrote architecture/DB docs; managed GitHub releases and defense deliverables.',
     ],
   },
 ];

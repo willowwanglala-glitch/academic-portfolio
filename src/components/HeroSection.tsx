@@ -92,7 +92,7 @@ export default function HeroSection() {
           {/* Download CV button */}
           <div className="pt-1">
             <a
-              href={`${BASE}CV-Zhenfei%20Wang.pdf`}
+              href={`${BASE}CV-Zhenfei%20Wang-0828.pdf`}
               download="CV-Zhenfei Wang.pdf"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-xl font-medium text-sm shadow-sm hover:shadow-md hover:scale-[1.02] transition-all duration-300"
             >
@@ -104,7 +104,7 @@ export default function HeroSection() {
           {/* Contact Info */}
           <div className="flex flex-wrap justify-start gap-4 pt-2">
             <ContactItem icon={<Phone size={16} />} text="+86 13794684194" colorClass="text-foreground" />
-            <ContactItem icon={<Mail size={16} />} text="3223005898@mail2.gudt.edu.cn" colorClass="text-foreground" />
+            <ContactItem icon={<Mail size={16} />} text="3223005898@mail2.gdut.edu.cn" colorClass="text-foreground" />
             <ContactItem icon={<Github size={16} />} text="github.com/willowwanglala-glitch" href="https://github.com/willowwanglala-glitch" colorClass="text-foreground" />
             <ContactItem icon={<MapPin size={16} />} text="Guangzhou, China" colorClass="text-foreground" />
           </div>
