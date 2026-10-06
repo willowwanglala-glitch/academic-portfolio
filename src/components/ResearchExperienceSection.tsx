@@ -16,9 +16,9 @@ const researchExperiences = [
     organization: "Speech and Language Laboratory, Nanyang Technological University, Singapore (Remote)",
     period: "07/2026 – Present",
     description: [
-      "Researched synthesis and automatic evaluation of non-verbal vocalizations (e.g., laughter, sighs) for TTS systems, under the supervision of Prof. Chng Eng Siong.",
-      "Implemented and operated a lab-specified batch pipeline for tagged TTS evaluation: GPT scenario/corpus generation → zh/en tag insertion → Qwen (~200 h) and ElevenLabs (~6 h) synthesis → Omni judge → VAD rescue (p1 only) → round-based archiving and duration/pass-rate tracking.",
-      "Scaled execution to 633 rounds and 37.7k countable clips, meeting synthesis targets and delivering ~197 h of QC-usable speech per lab filtering rules (94.9% clip-level pass rate after VAD; p2: ~99%); prepared the unified handoff package (audio, JSON, README, pass-rate summary)."
+      "Researched synthesis and automatic evaluation of non-verbal vocalizations (e.g., laughter, sighs) for TTS, under Prof. Chng Eng Siong.",
+      "Built and ran a tagged TTS evaluation pipeline (GPT corpus → tag insertion → Qwen/ElevenLabs → Omni judge → archive/stats); zh/en included VAD rescue (p1).",
+      "Delivered zh/en ~197 h QC-usable speech (633 rounds, ~37.7k clips; 94.9% pass after VAD) and extended the pipeline to ms/id (~192 h Omni-pass / ~284 h synthesized, near the ~195 h target), with dual p1/p2 tagging, QC, and large-scale batch production."
     ]
   },
   {
@@ -36,9 +36,9 @@ const researchExperiences = [
     organization: "Research Project",
     period: "11/2025 – Present",
     description: [
-      "Examined how prompt engineering can improve LLM-based translation of Chinese classical poetry, addressing the lack of theory-driven prompt design for linguistically and culturally complex texts.",
-      "Based on Xu Yuanchong's translation theories, collected 7 poems, designed 9 structured prompt architectures and translated them across multiple LLMs (DeepSeek-V3.1, Kimi-K2, ChatGPT) — 486 prompt-translation pairs. Led research design, corpus preparation, experimental workflow (Coze) construction, and data analysis, with translation outputs assessed through expert scoring and SPSS (Cronbach's α = .789) on a self-made three-dimension evaluation scale.",
-      "Found the main effect of prompt framework on translation quality (p < .001); completed the core experimental framework and drafted a manuscript of approximately 13,000 words, currently undergoing refinement before submission."
+      "Examined how prompt engineering and retrieval augmentation (RAT) can improve LLM-based translation of Chinese classical poetry, addressing the lack of theory-driven prompt design for linguistically and culturally complex texts.",
+      "Completed the Du Fu phase: based on Xu Yuanchong's \"Three Beauties\" theory, designed 8 structured prompt architectures (ICIO, CRISPE, BROKE, RASCEF and their 3M variants) and translated them across DeepSeek-V3.1, Kimi-K2, and ChatGPT (486 prompt–translation pairs); expert scoring with a self-made scale (Cronbach's α = .789) revealed a significant main effect of prompt framework on translation quality (p < .001). Manuscript (~13,000 words, ID: 2026-1163) under review at Foreign Language Teaching and Research (《外语教学与研究》).",
+      "Currently extending the study from Du Fu to Li Bai with an 8 (prompt) × 2 (RAT on/off) × 3 (LLM) design, adding an automated evaluation pipeline (rhyme/syllable metrics, LLM-as-judge validation, CoT decision-path tracing)."
     ]
   },
   {
@@ -49,7 +49,7 @@ const researchExperiences = [
     description: [
       "Investigated the intellectual structure, research hotspots, and emerging trends in prosodic grammar, focusing on the scholarly contributions of Feng Shengli.",
       "Independently conducted research design, literature collection, data cleaning, and bibliometric analysis using CiteSpace and VOSviewer, analyzing over 5,000 citation records and managing large-scale literature datasets with tools such as Google Scholar, CNKI, Zotero, and NoteExpress.",
-      "Completed a manuscript of over 10,000 words; currently under revision with supervisor guidance and planned for submission to SSCI."
+      "Completed a manuscript of over 13,000 words; currently under revision with supervisor guidance and planned for submission."
     ]
   },
   {

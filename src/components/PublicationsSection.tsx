@@ -1,29 +1,33 @@
-import { Clock } from "lucide-react";
+import { Clock, Send } from "lucide-react";
 
 interface Manuscript {
   title: string;
   authors: string;
   details: string;
+  status: "Under review" | "Manuscript";
 }
 
 const manuscripts: Manuscript[] = [
   {
     title: "Prompt Optimization for Chinese Classical Poetry Translation Based on Large Language Models",
     authors: "Zhenfei Wang",
-    details: "Manuscript of approximately 13,000 words, currently undergoing refinement before submission. Found the main effect of prompt framework on translation quality (p < .001) through 486 prompt-translation pairs across DeepSeek-V3.1, Kimi-K2, and ChatGPT, with expert scoring (Cronbach's α = .789) on a three-dimension evaluation scale.",
+    status: "Under review",
+    details: "Manuscript of approximately 13,000 words (ID: 2026-1163) under review at Foreign Language Teaching and Research (《外语教学与研究》). Completed the Du Fu phase with 8 structured prompt architectures across DeepSeek-V3.1, Kimi-K2, and ChatGPT (486 prompt–translation pairs); expert scoring (Cronbach's α = .789) found a significant main effect of prompt framework on translation quality (p < .001).",
   },
   {
     title: "Research Hotspots and Visualized Analysis of Prosodic Grammar Based on VOSviewer and CiteSpace",
     authors: "Zhenfei Wang",
-    details: "Manuscript of over 10,000 words, currently under revision with supervisor guidance and planned for SSCI submission. Independent bibliometric analysis of 5,000+ citation records using CiteSpace and VOSviewer, focusing on the scholarly contributions of Feng Shengli.",
+    status: "Manuscript",
+    details: "Manuscript of over 13,000 words, currently under revision with supervisor guidance and planned for submission. Independent bibliometric analysis of 5,000+ citation records using CiteSpace and VOSviewer, focusing on the scholarly contributions of Feng Shengli.",
   },
 ];
 
-function StatusBadge() {
+function StatusBadge({ status }: { status: Manuscript["status"] }) {
+  const isUnderReview = status === "Under review";
   return (
     <span className="inline-flex items-center gap-1 text-xs font-medium px-2.5 py-0.5 rounded-full bg-primary/15 text-primary">
-      <Clock size={12} />
-      Manuscript
+      {isUnderReview ? <Send size={12} /> : <Clock size={12} />}
+      {status}
     </span>
   );
 }
@@ -47,7 +51,7 @@ export default function PublicationsSection() {
               data-reveal-delay={String(index * 100)}
             >
               <div className="mb-3">
-                <StatusBadge />
+                <StatusBadge status={paper.status} />
               </div>
 
               <h3 className="text-lg md:text-xl font-semibold text-foreground leading-snug mb-2">

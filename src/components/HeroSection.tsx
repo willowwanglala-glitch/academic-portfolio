@@ -92,7 +92,7 @@ export default function HeroSection() {
           {/* Download CV button */}
           <div className="pt-1">
             <a
-              href={`${BASE}CV-Zhenfei%20Wang-0828.pdf`}
+              href={`${BASE}CV-Zhenfei%20Wang.pdf`}
               download="CV-Zhenfei Wang.pdf"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-xl font-medium text-sm shadow-sm hover:shadow-md hover:scale-[1.02] transition-all duration-300"
             >

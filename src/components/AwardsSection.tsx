@@ -11,6 +11,7 @@ const PawIcon = ({ className }: { className?: string }) => (
 );
 
 const awards = [
+  { name: 'iCAN International Contest of Innovation: Advanced from campus round; regional results pending', year: '2026' },
   { name: 'Second Prize (Provincial), "Telling China\'s Stories Well in Foreign Languages" Short Video Competition, Guangdong Province', year: '2025' },
   { name: 'Bronze Award (Provincial), FLTRP · iTest Cup Short Video Competition, Guangdong Province', year: '2024' },
   { name: 'Bronze Award (University), FLTRP · iTest Cup Translation Competition (Written Translation)', year: '2025' },
@@ -26,7 +27,7 @@ const awards = [
 ];
 
 const certifications = [
-  { category: 'English', items: ['CET-4 (569)', 'CET-6 (523)', 'TEM-4 (Good)', 'IELTS 6.0 (Overall), retake scheduled in July 2026 targeting 6.5+'] },
+  { category: 'English', items: ['CET-4 (569)', 'CET-6 (523)', 'TEM-4 (Good)', 'IELTS 6.5 (6)'] },
   { category: 'Mandarin Chinese', items: ['Level 2-B'] },
 ];
 
