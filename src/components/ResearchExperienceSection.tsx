@@ -37,8 +37,8 @@ const researchExperiences = [
     period: "11/2025 – Present",
     description: [
       "Examined how prompt engineering and retrieval augmentation (RAT) can improve LLM-based translation of Chinese classical poetry, addressing the lack of theory-driven prompt design for linguistically and culturally complex texts.",
-      "Completed the Du Fu phase: based on Xu Yuanchong's \"Three Beauties\" theory, designed 8 structured prompt architectures (ICIO, CRISPE, BROKE, RASCEF and their 3M variants) and translated them across DeepSeek-V3.1, Kimi-K2, and ChatGPT (486 prompt–translation pairs); expert scoring with a self-made scale (Cronbach's α = .789) revealed a significant main effect of prompt framework on translation quality (p < .001). Manuscript (~13,000 words, ID: 2026-1163) under review at Foreign Language Teaching and Research (《外语教学与研究》).",
-      "Currently extending the study from Du Fu to Li Bai with an 8 (prompt) × 2 (RAT on/off) × 3 (LLM) design, adding an automated evaluation pipeline (rhyme/syllable metrics, LLM-as-judge validation, CoT decision-path tracing)."
+      "Completed the Du Fu phase: based on Xu Yuanchong's \"Three Beauties\" theory, designed 9 structured prompt architectures (ICIO, CRISPE, BROKE, RASCEF and their 3M variants) and translated them across DeepSeek-V3.1, Kimi-K2, and ChatGPT (486 prompt–translation pairs); expert scoring with a self-made scale (Cronbach's α = .789) revealed a significant main effect of prompt framework on translation quality (p < .001). Manuscript (~13,000 words, ID: 2026-1163) under review at Foreign Language Teaching and Research (《外语教学与研究》).",
+      "Currently extending the study from Du Fu to Li Bai with a 9 (prompt) × 2 (RAT on/off) × 3 (LLM) design, adding an automated evaluation pipeline (rhyme/syllable metrics, LLM-as-judge validation, CoT decision-path tracing)."
     ]
   },
   {

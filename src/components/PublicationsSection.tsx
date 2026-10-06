@@ -12,7 +12,7 @@ const manuscripts: Manuscript[] = [
     title: "Prompt Optimization for Chinese Classical Poetry Translation Based on Large Language Models",
     authors: "Zhenfei Wang",
     status: "Under review",
-    details: "Manuscript of approximately 13,000 words (ID: 2026-1163) under review at Foreign Language Teaching and Research (《外语教学与研究》). Completed the Du Fu phase with 8 structured prompt architectures across DeepSeek-V3.1, Kimi-K2, and ChatGPT (486 prompt–translation pairs); expert scoring (Cronbach's α = .789) found a significant main effect of prompt framework on translation quality (p < .001).",
+    details: "Manuscript of approximately 13,000 words (ID: 2026-1163) under review at Foreign Language Teaching and Research (《外语教学与研究》). Completed the Du Fu phase with 9 structured prompt architectures across DeepSeek-V3.1, Kimi-K2, and ChatGPT (486 prompt–translation pairs); expert scoring (Cronbach's α = .789) found a significant main effect of prompt framework on translation quality (p < .001).",
   },
   {
     title: "Research Hotspots and Visualized Analysis of Prosodic Grammar Based on VOSviewer and CiteSpace",
